@@ -1,0 +1,9 @@
+
+# EditorConfig
+#	More information: https://editorconfig.org/
+
+# Apply these common formatting settings
+end_of_line = lf
+insert_final_newline = true
+indent_style = tab
+charset = utf-8
