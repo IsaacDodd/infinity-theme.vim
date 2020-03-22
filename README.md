@@ -11,7 +11,7 @@ The Infinity ColorScheme is the default colorscheme for the Infinity Editor. It 
 
 ## Installation
 
-The easiest way to install the colorscheme is using the instructions from any vim plugin-manager of your choosing, such as [Vim-Plug][vimplug], [Vundle][vundle], [Pathogen][pathogen], or [minipac][minipac].
+The easiest way to install the colorscheme is using the instructions from any vim plugin-manager of your choosing, such as [Vim-Plug][vimplug], [Vundle][vundle], [Pathogen][pathogen], or [minpac][minpac].
 
 If you prefer not to use a plugin-manager, please see `:h package` in your editor for help on how to install the plugin manually.
 
@@ -38,6 +38,6 @@ ______
 [vimplug]: https://github.com/junegunn/vim-plug
 [vundle]: https://github.com/VundleVim/Vundle.vim
 [pathogen]: https://github.com/tpope/vim-pathogen
-[minipac]: https://github.com/k-takata/minpac
+[minpac]: https://github.com/k-takata/minpac
 [edge]: https://github.com/sainnhe/edge/
 [logo]: https://github.com/IsaacDodd/infinity-theme.vim/raw/master/.files/infinity-editor-2b.png "Infinity Editor"
