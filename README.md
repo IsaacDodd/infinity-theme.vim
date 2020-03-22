@@ -25,9 +25,7 @@ There were also some additions based on the code from the following colorschemes
 
 ______
 
-<p align="center">
 [![Infinity-Editor][logo]][infinity-editor]
-</p>
 
 [infinity-editor]: https://github.com/IsaacDodd/infinity-editor
 [neovim]: https://neovim.io/
