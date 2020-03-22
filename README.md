@@ -20,9 +20,14 @@ Originally based on the now-deprecated '[Tomorrow][tomorrow]' theme by [Chris Ke
 which is a theme based on the Hex color conversion functions from the theme "[Desert256][desert256]")
 There were also some additions based on the code from the following colorschemes:
 * [fruchtig][fruchtig]
-* [SpaceVim][spacevim].
+* [SpaceVim][spacevim]
+* [edge by Sainhe][edge]
 
+______
+
+<p align="center">
 [![Infinity-Editor][logo]][infinity-editor]
+</p>
 
 [infinity-editor]: https://github.com/IsaacDodd/infinity-editor
 [neovim]: https://neovim.io/
@@ -36,4 +41,5 @@ There were also some additions based on the code from the following colorschemes
 [vundle]: https://github.com/VundleVim/Vundle.vim
 [pathogen]: https://github.com/tpope/vim-pathogen
 [minipac]: https://github.com/k-takata/minpac
+[edge]: https://github.com/sainnhe/edge/
 [logo]: https://github.com/IsaacDodd/infinity-theme.vim/raw/master/.files/infinity-editor-2b.png "Infinity Editor"

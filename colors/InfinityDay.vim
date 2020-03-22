@@ -35,7 +35,7 @@ let s:foreground = "4d4d4c" " #4D4D4C
 let s:background = "ffffff"	" #FFFFFF
 let s:selection = "d6d6d6"	" #D6D6D6
 let s:line = "efefef"		" #EFEFEF
-let s:comment = "8e908c"	" #8e908c
+let s:comment = "8e908c"	" #8E908C
 let s:red = "c82829"		" #c82829
 let s:orange = "f5871f"		" #F5871F
 let s:yellow = "eab700"		" #EAB700
@@ -43,6 +43,7 @@ let s:green = "718c00"		" #718C00
 let s:aqua = "3e999f"		" #3E999F
 let s:blue = "4271ae"		" #4271AE
 let s:purple = "8959a8"		" #8959A8
+let s:gray = "8e908c"		" #8E908C
 let s:window = "efefef"		" #EFEFEF
 
 if has("gui_running") || &t_Co == 88 || &t_Co == 256
@@ -252,6 +253,15 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 			exec "hi " . a:group . " gui=" . a:attr . " cterm=" . a:attr
 		endif
 	endfun
+
+	" Predefined Colors
+	call <SID>X("Red", s:red, "", "")
+	call <SID>X("Orange", s:orange, "", "")
+	call <SID>X("Yellow", s:yellow, "", "")
+	call <SID>X("Green", s:green, "", "")
+	call <SID>X("Blue", s:blue, "", "")
+	call <SID>X("Cyan", s:aqua, "", "")
+	call <SID>X("Purple", s:purple, "", "")
 
 	" Vim Highlighting
 	call <SID>X("Normal", s:foreground, s:background, "")
@@ -490,6 +500,39 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("diffAdded", s:green, "", "")
 	call <SID>X("diffRemoved", s:red, "", "")
 	call <SID>X("gitcommitSummary", "", "", "bold")
+
+	" Plugin: vim-plug
+	call <SID>X("plug1", s:purple, '', 'bold')
+	call <SID>X('plugNumber', s:green, '', 'bold')
+	call <SID>X("plug2", s:aqua, "", "")
+	call <SID>X("plugBracket", s:blue, "", "")
+	call <SID>X('plugName', s:green, '', 'bold')
+	call <SID>X("plugDash", s:blue, "", "")
+	call <SID>X("plugNotLoaded", s:gray, "", "")
+	call <SID>X("plugH2", s:blue, "", "")
+	call <SID>X("plugMessage", s:blue, "", "")
+	call <SID>X("plugError", s:red, "", "")
+	call <SID>X("plugRelDate", s:gray, "", "")
+	call <SID>X("plugStar", s:purple, "", "")
+	call <SID>X("plugUpdate", s:aqua, "", "")
+	call <SID>X("plugDeleted", s:gray, "", "")
+	call <SID>X("plugEdge", s:purple, "", "")
+
+	" Plugin: FZF
+	let g:fzf_colors = {
+	      \ 'fg': ['fg', 'Normal'],
+	      \ 'bg': ['bg', 'Normal'],
+	      \ 'hl': ['fg', 'Green'],
+	      \ 'fg+': ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+	      \ 'bg+': ['bg', 'CursorLine', 'CursorColumn'],
+	      \ 'hl+': ['fg', 'Green'],
+	      \ 'info': ['fg', 'Cyan'],
+	      \ 'prompt': ['fg', 'Purple'],
+	      \ 'pointer': ['fg', 'Blue'],
+	      \ 'marker': ['fg', 'Blue'],
+	      \ 'spinner': ['fg', 'Yellow'],
+	      \ 'header': ['fg', 'Blue']
+	      \ }
 
 	" Delete Functions
 	delf <SID>X
